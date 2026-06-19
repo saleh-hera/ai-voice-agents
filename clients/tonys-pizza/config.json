@@ -1,0 +1,18 @@
+{
+  "name": "Bella - Tony's Pizza AI Agent",
+  "client": "Tony's Pizza",
+  "location": "Ontario, CA",
+  "industry": "Restaurant / Pizza",
+  "baseAgent": "agents/bella-restaurant",
+  "firstMessage": "Thanks for calling Tony's Pizza! This is Bella. Are you looking to place a pickup order or would you like delivery today?",
+  "voice": {
+    "provider": "vapi",
+    "voiceId": "female-warm",
+    "description": "Warm, friendly female voice"
+  },
+  "model": {
+    "provider": "openai",
+    "model": "gpt-4o",
+    "systemPromptFile": "system-prompt.md"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Nova Sales - E-Commerce AI Assistant",
+  "assistantId": "cc8183ab-1e8f-4a81-afbf-40e7f7a31212",
+  "industry": "E-Commerce / Retail",
+  "firstMessage": "Hi, this is Nova! I can help you place an order, track a shipment, or find the right product. What can I do for you today?",
+  "voice": {
+    "provider": "vapi",
+    "voiceId": "female-friendly",
+    "description": "Upbeat, helpful female shopping-assistant voice"
+  },
+  "model": {
+    "provider": "openai",
+    "model": "gpt-4o",
+    "systemPromptFile": "system-prompt.md"
+  },
+  "pricing": {
+    "model": "subscription",
+    "amountUsd": 179,
+    "interval": "month",
+    "freeTrialDays": 7,
+    "checkoutUrl": "https://buy.stripe.com/eVqfZa9KmgSi0yl2wQbsc01"
+  },
+  "demoUrl": "https://vapi.ai/?demo=true&shareKey=6b3a74e2-b47c-4c0f-93d4-a3d4b8e5d674&assistantId=cc8183ab-1e8f-4a81-afbf-40e7f7a31212"
+}

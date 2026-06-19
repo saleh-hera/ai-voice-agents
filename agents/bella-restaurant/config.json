@@ -1,0 +1,24 @@
+{
+  "name": "Bella - Restaurant AI Receptionist",
+  "assistantId": "24804ad8-2f6d-4b73-a5df-f76d37fe8dd0",
+  "industry": "Restaurant / Hospitality",
+  "firstMessage": "Thank you for calling! This is Bella. How can I help you today — a reservation, an order, or a question about the menu?",
+  "voice": {
+    "provider": "vapi",
+    "voiceId": "female-warm",
+    "description": "Warm, friendly female host voice"
+  },
+  "model": {
+    "provider": "openai",
+    "model": "gpt-4o",
+    "systemPromptFile": "system-prompt.md"
+  },
+  "pricing": {
+    "model": "subscription",
+    "amountUsd": 199,
+    "interval": "month",
+    "freeTrialDays": 7,
+    "checkoutUrl": "https://buy.stripe.com/dRmcMYg8KcC2ch37Rabsc00"
+  },
+  "demoUrl": "https://vapi.ai/?demo=true&shareKey=6b3a74e2-b47c-4c0f-93d4-a3d4b8e5d674&assistantId=24804ad8-2f6d-4b73-a5df-f76d37fe8dd0"
+}
