@@ -1,12 +1,12 @@
 {
   "name": "MediAssist - Healthcare Intake Agent",
-  "assistantId": "",
+  "assistantId": "11a5e72f-ee93-49b2-bbb5-5ba5255c8932",
   "industry": "Healthcare",
   "firstMessage": "Thank you for calling. This is MediAssist, your intake coordinator. I'm here to help you get everything set up for your visit. Can I start with your full name please?",
   "voice": {
     "provider": "vapi",
     "voiceId": "female-calm",
-    "description": "Calm, professional female voice — empathetic and reassuring"
+    "description": "Calm, professional female voice \u2014 empathetic and reassuring"
   },
   "model": {
     "provider": "openai",
@@ -24,7 +24,7 @@
   "compliance": {
     "hipaa": true,
     "requiresBAA": true,
-    "phiHandling": "data passed to clinic system of record — not stored by agent",
+    "phiHandling": "data passed to clinic system of record \u2014 not stored by agent",
     "patientConsentRequired": true
   },
   "features": [
