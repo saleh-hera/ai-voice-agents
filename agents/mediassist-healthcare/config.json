@@ -1,0 +1,41 @@
+{
+  "name": "MediAssist - Healthcare Intake Agent",
+  "assistantId": "",
+  "industry": "Healthcare",
+  "firstMessage": "Thank you for calling. This is MediAssist, your intake coordinator. I'm here to help you get everything set up for your visit. Can I start with your full name please?",
+  "voice": {
+    "provider": "vapi",
+    "voiceId": "female-calm",
+    "description": "Calm, professional female voice — empathetic and reassuring"
+  },
+  "model": {
+    "provider": "openai",
+    "model": "gpt-4o",
+    "systemPromptFile": "system-prompt.md"
+  },
+  "pricing": {
+    "model": "subscription",
+    "amountUsd": 399,
+    "interval": "month",
+    "freeTrialDays": 7,
+    "checkoutUrl": ""
+  },
+  "demoUrl": null,
+  "compliance": {
+    "hipaa": true,
+    "requiresBAA": true,
+    "phiHandling": "data passed to clinic system of record — not stored by agent",
+    "patientConsentRequired": true
+  },
+  "features": [
+    "Full patient intake (demographics, insurance, medical history)",
+    "Insurance verification collection",
+    "Appointment scheduling & confirmation",
+    "Pre-visit questionnaire",
+    "Emergency escalation with 911 redirect",
+    "Human transfer trigger",
+    "Multilingual: English + Spanish",
+    "HIPAA-compliant deployment ready"
+  ],
+  "notes": "assistantId will be populated after running sync_to_vapi.py to create this assistant in Vapi. checkoutUrl requires a new Stripe payment link at $399/month."
+}

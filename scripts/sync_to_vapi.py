@@ -59,24 +59,48 @@ def sync_agent(agent_dir: Path) -> None:
         sys.exit("❌ Missing VAPI_API_KEY. Copy .env.example to .env and add your key.")
 
     config = load_agent(agent_dir)
-    assistant_id = config["assistantId"]
+    assistant_id = config.get("assistantId", "").strip()
     payload = build_payload(config)
 
-    print(f"→ Syncing '{config['name']}'  ({agent_dir.name})")
-    resp = requests.patch(
-        f"{VAPI_BASE}/assistant/{assistant_id}",
-        headers={
-            "Authorization": f"Bearer {VAPI_API_KEY}",
-            "Content-Type": "application/json",
-        },
-        json=payload,
-        timeout=30,
-    )
+    headers = {
+        "Authorization": f"Bearer {VAPI_API_KEY}",
+        "Content-Type": "application/json",
+    }
 
-    if resp.status_code in (200, 201):
-        print(f"  ✅ Updated successfully.\n")
+    if assistant_id:
+        # Existing agent — update via PATCH
+        print(f"→ Updating '{config['name']}'  ({agent_dir.name})")
+        resp = requests.patch(
+            f"{VAPI_BASE}/assistant/{assistant_id}",
+            headers=headers,
+            json=payload,
+            timeout=30,
+        )
+        if resp.status_code in (200, 201):
+            print(f"  ✅ Updated successfully.\n")
+        else:
+            print(f"  ❌ Failed ({resp.status_code}): {resp.text}\n")
     else:
-        print(f"  ❌ Failed ({resp.status_code}): {resp.text}\n")
+        # New agent — create via POST, then save assistantId back to config.json
+        print(f"→ Creating NEW assistant '{config['name']}'  ({agent_dir.name})")
+        create_payload = {**payload, "name": config["name"]}
+        resp = requests.post(
+            f"{VAPI_BASE}/assistant",
+            headers=headers,
+            json=create_payload,
+            timeout=30,
+        )
+        if resp.status_code in (200, 201):
+            new_id = resp.json().get("id", "")
+            print(f"  ✅ Created. New assistantId: {new_id}")
+            # Write the ID back into config.json
+            config_path = agent_dir / "config.json"
+            raw = json.loads(config_path.read_text(encoding="utf-8"))
+            raw["assistantId"] = new_id
+            config_path.write_text(json.dumps(raw, indent=2), encoding="utf-8")
+            print(f"  💾 assistantId saved to {config_path.name}\n")
+        else:
+            print(f"  ❌ Failed ({resp.status_code}): {resp.text}\n")
 
 
 def main() -> None:
