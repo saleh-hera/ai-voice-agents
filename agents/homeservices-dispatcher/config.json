@@ -1,12 +1,12 @@
 {
-  "name": "ServiceDesk - Home Services AI Dispatcher",
-  "assistantId": "",
+  "name": "ServiceDesk - Home Services Dispatcher",
+  "assistantId": "d5706649-3b20-46bb-a6ea-76151e1dfd5d",
   "industry": "Home Services",
   "firstMessage": "Thanks for calling! This is ServiceDesk. Are you calling about a repair, a new installation, or would you like to schedule a maintenance visit?",
   "voice": {
     "provider": "vapi",
     "voiceId": "female-calm",
-    "description": "Calm, capable female voice — reassuring during stressful repair situations"
+    "description": "Calm, capable female voice \u2014 reassuring during stressful repair situations"
   },
   "model": {
     "provider": "openai",

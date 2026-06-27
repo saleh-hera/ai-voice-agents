@@ -1,12 +1,12 @@
 {
   "name": "AutoDesk - Car Dealership AI Agent",
-  "assistantId": "",
+  "assistantId": "785eacc0-83bf-4db3-a439-0c6424a7916b",
   "industry": "Automotive",
   "firstMessage": "Thanks for calling! This is AutoDesk, your vehicle specialist. Are you looking to buy, browse, or is this about a service appointment?",
   "voice": {
     "provider": "vapi",
     "voiceId": "female-energetic",
-    "description": "Upbeat, enthusiastic female voice — knowledgeable and trustworthy"
+    "description": "Upbeat, enthusiastic female voice \u2014 knowledgeable and trustworthy"
   },
   "model": {
     "provider": "openai",

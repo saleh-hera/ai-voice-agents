@@ -1,12 +1,12 @@
 {
-  "name": "DentaDesk - Dental Office AI Receptionist",
-  "assistantId": "",
+  "name": "DentaDesk - Dental AI Receptionist",
+  "assistantId": "1a89b861-c735-4a1b-9bde-a50cc34a6012",
   "industry": "Healthcare / Dental",
   "firstMessage": "Thank you for calling! This is DentaDesk, your dental scheduling assistant. Are you a new patient or have you visited us before?",
   "voice": {
     "provider": "vapi",
     "voiceId": "female-warm",
-    "description": "Warm, reassuring female voice — friendly and calming for anxious patients"
+    "description": "Warm, reassuring female voice \u2014 friendly and calming for anxious patients"
   },
   "model": {
     "provider": "openai",

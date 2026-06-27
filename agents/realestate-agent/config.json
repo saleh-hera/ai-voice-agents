@@ -1,12 +1,12 @@
 {
   "name": "HomeConnect - Real Estate AI Agent",
-  "assistantId": "",
+  "assistantId": "80461e21-c975-4391-aa6b-32c849949a75",
   "industry": "Real Estate",
   "firstMessage": "Thank you for calling! This is HomeConnect, your real estate assistant. Are you looking to buy, sell, or rent today?",
   "voice": {
     "provider": "vapi",
     "voiceId": "female-confident",
-    "description": "Confident, warm female voice — knowledgeable and professional"
+    "description": "Confident, warm female voice \u2014 knowledgeable and professional"
   },
   "model": {
     "provider": "openai",
