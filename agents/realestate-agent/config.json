@@ -1,0 +1,24 @@
+{
+  "name": "HomeConnect - Real Estate AI Agent",
+  "assistantId": "",
+  "industry": "Real Estate",
+  "firstMessage": "Thank you for calling! This is HomeConnect, your real estate assistant. Are you looking to buy, sell, or rent today?",
+  "voice": {
+    "provider": "vapi",
+    "voiceId": "female-confident",
+    "description": "Confident, warm female voice — knowledgeable and professional"
+  },
+  "model": {
+    "provider": "openai",
+    "model": "gpt-4o",
+    "systemPromptFile": "system-prompt.md"
+  },
+  "pricing": {
+    "model": "subscription",
+    "amountUsd": 299,
+    "interval": "month",
+    "freeTrialDays": 7,
+    "checkoutUrl": ""
+  },
+  "demoUrl": null
+}

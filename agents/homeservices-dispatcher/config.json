@@ -1,0 +1,24 @@
+{
+  "name": "ServiceDesk - Home Services AI Dispatcher",
+  "assistantId": "",
+  "industry": "Home Services",
+  "firstMessage": "Thanks for calling! This is ServiceDesk. Are you calling about a repair, a new installation, or would you like to schedule a maintenance visit?",
+  "voice": {
+    "provider": "vapi",
+    "voiceId": "female-calm",
+    "description": "Calm, capable female voice — reassuring during stressful repair situations"
+  },
+  "model": {
+    "provider": "openai",
+    "model": "gpt-4o",
+    "systemPromptFile": "system-prompt.md"
+  },
+  "pricing": {
+    "model": "subscription",
+    "amountUsd": 249,
+    "interval": "month",
+    "freeTrialDays": 7,
+    "checkoutUrl": ""
+  },
+  "demoUrl": null
+}

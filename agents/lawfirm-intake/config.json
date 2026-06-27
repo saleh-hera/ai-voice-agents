@@ -1,0 +1,24 @@
+{
+  "name": "LexAssist - Law Firm Intake Agent",
+  "assistantId": "",
+  "industry": "Legal",
+  "firstMessage": "Thank you for calling. This is LexAssist, the firm's intake coordinator. I'm here to help you get connected with the right attorney. Can I start with your name please?",
+  "voice": {
+    "provider": "vapi",
+    "voiceId": "female-professional",
+    "description": "Calm, professional female voice — empathetic and precise"
+  },
+  "model": {
+    "provider": "openai",
+    "model": "gpt-4o",
+    "systemPromptFile": "system-prompt.md"
+  },
+  "pricing": {
+    "model": "subscription",
+    "amountUsd": 399,
+    "interval": "month",
+    "freeTrialDays": 7,
+    "checkoutUrl": ""
+  },
+  "demoUrl": null
+}

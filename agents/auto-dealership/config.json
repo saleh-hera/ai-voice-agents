@@ -1,0 +1,24 @@
+{
+  "name": "AutoDesk - Car Dealership AI Agent",
+  "assistantId": "",
+  "industry": "Automotive",
+  "firstMessage": "Thanks for calling! This is AutoDesk, your vehicle specialist. Are you looking to buy, browse, or is this about a service appointment?",
+  "voice": {
+    "provider": "vapi",
+    "voiceId": "female-energetic",
+    "description": "Upbeat, enthusiastic female voice — knowledgeable and trustworthy"
+  },
+  "model": {
+    "provider": "openai",
+    "model": "gpt-4o",
+    "systemPromptFile": "system-prompt.md"
+  },
+  "pricing": {
+    "model": "subscription",
+    "amountUsd": 399,
+    "interval": "month",
+    "freeTrialDays": 7,
+    "checkoutUrl": ""
+  },
+  "demoUrl": null
+}
