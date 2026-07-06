@@ -5,8 +5,8 @@
   "firstMessage": "Hi, this is Nova! I can help you place an order, track a shipment, or find the right product. What can I do for you today?",
   "voice": {
     "provider": "vapi",
-    "voiceId": "female-friendly",
-    "description": "Upbeat, helpful female shopping-assistant voice"
+    "voiceId": "female-warm",
+    "description": "Warm, natural female shopping-assistant voice (same voice as Bella)"
   },
   "model": {
     "provider": "openai",

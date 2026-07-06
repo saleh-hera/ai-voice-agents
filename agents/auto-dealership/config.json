@@ -5,8 +5,8 @@
   "firstMessage": "Thanks for calling! This is AutoDesk, your vehicle specialist. Are you looking to buy, browse, or is this about a service appointment?",
   "voice": {
     "provider": "vapi",
-    "voiceId": "female-energetic",
-    "description": "Upbeat, enthusiastic female voice \u2014 knowledgeable and trustworthy"
+    "voiceId": "female-warm",
+    "description": "Warm, natural female voice \u2014 knowledgeable and trustworthy (same voice as Bella)"
   },
   "model": {
     "provider": "openai",
