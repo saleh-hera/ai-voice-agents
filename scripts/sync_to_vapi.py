@@ -42,7 +42,7 @@ def load_agent(agent_dir: Path) -> dict:
 
 def build_payload(config: dict) -> dict:
     """Shape the config into the body Vapi expects for an assistant update."""
-    return {
+    payload = {
         "firstMessage": config.get("firstMessage", ""),
         "model": {
             "provider": config["model"]["provider"],
@@ -52,6 +52,16 @@ def build_payload(config: dict) -> dict:
             ],
         },
     }
+    # Voice is only pushed when the config opts in with "push": true —
+    # most agents' voice blocks are descriptive and their real voice is
+    # managed in the Vapi dashboard, so pushing would overwrite it.
+    voice = config.get("voice", {})
+    if voice.get("push"):
+        payload["voice"] = {
+            "provider": voice["provider"],
+            "voiceId": voice["voiceId"],
+        }
+    return payload
 
 
 def sync_agent(agent_dir: Path) -> None:
