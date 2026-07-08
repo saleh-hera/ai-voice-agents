@@ -31,7 +31,7 @@ Free 7-day trial: https://aiagentsvault.tech/marketplace/a11
 
 Happy to answer any questions. No pressure at all.
 
-— Saleh
+— SK | AI Agents Vault Tech
 ```
 
 ---
@@ -46,7 +46,7 @@ It answers after-hours calls, qualifies buyers, schedules showings, and never mi
 
 Free trial available. Happy to chat if useful.
 
-— Saleh
+— SK | AI Agents Vault Tech
 ```
 
 ---
@@ -61,7 +61,7 @@ Live demo: https://aiagentsvault.tech/marketplace/a10
 
 7-day free trial. No credit card needed.
 
-— Saleh
+— SK | AI Agents Vault Tech
 ```
 
 ---
@@ -76,7 +76,7 @@ Demo: https://aiagentsvault.tech/marketplace/a1
 
 Only $199/mo. Free trial to start.
 
-— Saleh
+— SK | AI Agents Vault Tech
 ```
 
 ---
