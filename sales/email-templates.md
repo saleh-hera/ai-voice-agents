@@ -1,5 +1,11 @@
 # Cold Email Templates — AI Agents Vault
 # 4 Agents × 3 Emails Each = 12 Templates
+#
+# These match the LIVE Apollo sequences (updated 2026-07-07 with {{company}} personalization).
+# {{first_name}} and {{company}} are Apollo dynamic variables — {{company}} renders the
+# contact's company name (e.g. "Entwined Wine & Cocktail Bar", "Hammerman Rosen").
+# Changes from v1: business name in every subject + opener, question-led first lines,
+# price removed from all Email 1s (still in Email 2s).
 
 ---
 
@@ -8,11 +14,11 @@ Demo: https://aiagentsvault.tech/marketplace/a11
 Trial: https://buy.stripe.com/9B6dR27CegSiepbefybsc06
 
 ### Email 1 — Day 1 (Pain hook)
-Subject: [Practice Name] — missed calls after 3pm?
+Subject: {{company}} — missed calls after 3pm?
 
-Hi [First Name],
+Hi {{first_name}},
 
-Dental offices miss 30–40% of incoming calls during patient appointments. Each missed call is a lost patient worth $1,200–$3,000 in lifetime value.
+Does {{company}} have front-desk coverage while your team is with patients? Dental offices miss 30–40% of incoming calls during appointments — and each missed call is a potential patient worth $1,200–$3,000 in lifetime value.
 
 I built DentaDesk — an AI receptionist that answers every call 24/7, books appointments, verifies insurance, and sounds completely human.
 
@@ -22,45 +28,50 @@ I built DentaDesk — an AI receptionist that answers every call 24/7, books app
 
 Worth a quick look?
 
-— Saleh Hira
-AI Agents Vault
-saleh.hira@gmail.com
+SK
+AI Agents Vault Tech
+outreach@cloudripple.org
+aiagentsvault.tech
 
 ---
 
 ### Email 2 — Day 3 (Follow-up + social proof)
-Subject: Re: [Practice Name] — quick follow up
+Subject: Re: {{company}} — quick follow up
 
-Hi [First Name],
+Hi {{first_name}},
 
 Just wanted to follow up on my note from a couple days ago.
 
-Dental practices using DentaDesk are capturing 12–18 more calls per week — calls that used to go to voicemail or ring out.
+Dental practices using DentaDesk are capturing 12–18 more calls per week — calls that used to go to voicemail or ring out. At $299/month, it pays for itself with one extra new patient booking at {{company}}.
 
-At $299/month, it pays for itself with one extra new patient booking.
+See it live (60 sec): https://aiagentsvault.tech/marketplace/a11
 
-Free trial still open: https://buy.stripe.com/9B6dR27CegSiepbefybsc06
+Happy to answer any questions on a quick call.
 
-Happy to do a 10-minute call to show you exactly how it works for a dental office like yours.
-
-— Saleh
+— SK
+AI Agents Vault Tech
+outreach@cloudripple.org
+aiagentsvault.tech
 
 ---
 
 ### Email 3 — Day 6 (Final, low pressure)
-Subject: Closing the loop — [Practice Name]
+Subject: Closing the loop — {{company}}
 
-Hi [First Name],
+Hi {{first_name}},
 
 Last email from me, I promise.
 
-If missed calls aren't a problem for your practice right now, no worries at all. I'll leave the free trial link here in case it's useful down the road:
+If missed calls aren't a problem for {{company}} right now, no worries at all. Demo is here whenever you're ready:
 
-https://buy.stripe.com/9B6dR27CegSiepbefybsc06
+https://aiagentsvault.tech/marketplace/a11
 
 Feel free to reach out anytime — happy to answer questions.
 
-— Saleh Hira | AI Agents Vault
+SK
+AI Agents Vault Tech
+outreach@cloudripple.org
+aiagentsvault.tech
 
 ---
 ---
@@ -70,11 +81,11 @@ Demo: https://aiagentsvault.tech/marketplace/a9
 Trial: https://buy.stripe.com/8x28wI3lY45w6WJ1sMbsc04
 
 ### Email 1 — Day 1 (Pain hook)
-Subject: [Agency Name] — leads calling after hours?
+Subject: {{company}} — leads calling after hours?
 
-Hi [First Name],
+Hi {{first_name}},
 
-Real estate agents lose 67% of leads who call after hours and get voicemail. Those buyers just call the next agent on Zillow.
+What happens when a buyer calls {{company}} at 9pm? Real estate agents lose 67% of leads who call after hours and get voicemail — those buyers just call the next agent on Zillow.
 
 I built HomeConnect — an AI agent that answers every call, qualifies leads, schedules showings, and captures buyer info 24/7. Sounds completely human.
 
@@ -82,40 +93,48 @@ Live demo (60 sec): https://aiagentsvault.tech/marketplace/a9
 
 7-day free trial. No setup fee.
 
-— Saleh Hira
-AI Agents Vault
+SK
+AI Agents Vault Tech
+outreach@cloudripple.org
+aiagentsvault.tech
 
 ---
 
 ### Email 2 — Day 3 (Follow-up)
-Subject: Re: [Agency Name] — one more thing
+Subject: Re: {{company}} — one more thing
 
-Hi [First Name],
+Hi {{first_name}},
 
-In California's market, a single missed lead can mean a $15,000–$25,000 lost commission.
+In today's market, a single missed lead can mean a $15,000–$25,000 lost commission.
 
-HomeConnect captures every call, qualifies the buyer, and schedules the showing — even at 10pm on a Sunday.
+HomeConnect captures every call to {{company}}, qualifies the buyer, and schedules the showing — even at 10pm on a Sunday.
 
-Free trial: https://buy.stripe.com/8x28wI3lY45w6WJ1sMbsc04
+See it live (60 sec): https://aiagentsvault.tech/marketplace/a9
 
 Want me to set it up for you this week?
 
-— Saleh
+— SK
+AI Agents Vault Tech
+outreach@cloudripple.org
+aiagentsvault.tech
 
 ---
 
 ### Email 3 — Day 6 (Final)
-Subject: Last note — [Agency Name]
+Subject: Last note — {{company}}
 
-Hi [First Name],
+Hi {{first_name}},
 
-Wrapping up my outreach. If after-hours lead capture isn't on your radar right now, totally fine.
+Wrapping up my outreach. If after-hours lead capture isn't on {{company}}'s radar right now, totally fine.
 
-Trial link stays open: https://buy.stripe.com/8x28wI3lY45w6WJ1sMbsc04
+Demo is here whenever you're ready: https://aiagentsvault.tech/marketplace/a9
 
 Reach out anytime — happy to help.
 
-— Saleh Hira | AI Agents Vault
+SK
+AI Agents Vault Tech
+outreach@cloudripple.org
+aiagentsvault.tech
 
 ---
 ---
@@ -125,33 +144,35 @@ Demo: https://aiagentsvault.tech/marketplace/a10
 Trial: https://buy.stripe.com/eVqdR2cWy31sgxj6N6bsc05
 
 ### Email 1 — Day 1 (Pain hook)
-Subject: [Firm Name] — intake calls going to voicemail?
+Subject: {{company}} — intake calls going to voicemail?
 
-Hi [First Name],
+Hi {{first_name}},
 
-Law firms miss 42% of potential client calls — most of those callers don't leave a message. They just call the next firm on Google.
+Who answers the phone at {{company}} after hours? Law firms miss 42% of potential client calls — and most of those callers don't leave a message. They just call the next firm on Google.
 
-I built LexAssist — an AI intake agent that answers every call 24/7, qualifies leads (practice area, urgency, budget), captures case details, and schedules consultations. Sounds completely human, never puts anyone on hold.
+I built LexAssist — an AI intake agent that answers every call 24/7, qualifies leads by practice area and urgency, captures case details, and schedules consultations. Sounds completely human, never puts anyone on hold.
 
 Live demo: https://aiagentsvault.tech/marketplace/a10
 
 7-day free trial. No credit card. Works for personal injury, immigration, family law, and more.
 
-— Saleh Hira
-AI Agents Vault
+SK
+AI Agents Vault Tech
+outreach@cloudripple.org
+aiagentsvault.tech
 
 ---
 
 ### Email 2 — Day 3 (Follow-up)
-Subject: Re: [Firm Name] — LexAssist
+Subject: Re: {{company}} — LexAssist
 
-Hi [First Name],
+Hi {{first_name}},
 
 One missed personal injury intake can be $50,000+ in lost contingency fees.
 
-LexAssist qualifies every caller by practice area, answers after hours, and books consultations automatically — at $399/month.
+LexAssist qualifies every caller to {{company}} by practice area, answers after hours, and books consultations automatically — at $399/month.
 
-Free trial: https://buy.stripe.com/eVqdR2cWy31sgxj6N6bsc05
+See it live (60 sec): https://aiagentsvault.tech/marketplace/a10
 
 Want a quick walkthrough this week?
 
@@ -160,15 +181,15 @@ Want a quick walkthrough this week?
 ---
 
 ### Email 3 — Day 6 (Final)
-Subject: Last note from me — [Firm Name]
+Subject: Last note from me — {{company}}
 
-Hi [First Name],
+Hi {{first_name}},
 
-Last message. If intake automation isn't the right fit right now, no worries.
+Last message. If intake automation isn't the right fit for {{company}} right now, no worries.
 
-Trial link is here when you're ready: https://buy.stripe.com/eVqdR2cWy31sgxj6N6bsc05
+Demo is here when you're ready: https://aiagentsvault.tech/marketplace/a10
 
-— Saleh Hira | AI Agents Vault
+SK | AI Agents Vault Tech | outreach@cloudripple.org | aiagentsvault.tech
 
 ---
 ---
@@ -178,49 +199,57 @@ Demo: https://aiagentsvault.tech/marketplace/a1
 Trial: https://buy.stripe.com/dRmcMYg8KcC2ch37Rabsc00
 
 ### Email 1 — Day 1 (Pain hook)
-Subject: [Restaurant Name] — reservation calls during dinner rush?
+Subject: {{company}} — reservation calls during dinner rush?
 
-Hi [First Name],
+Hi {{first_name}},
 
-Restaurants miss 35% of reservation calls during peak hours — every missed call is a table that books somewhere else.
+How many calls does {{company}} miss during the dinner rush? For most restaurants it's about a third — and every missed call is a table that books somewhere else.
 
 I built Bella — an AI receptionist that answers every call, takes reservations, handles menu questions, and manages your waitlist 24/7. Sounds warm and completely human.
 
-60-second demo: https://aiagentsvault.tech/marketplace/a1
+Hear her handle a real call (60 sec, no signup): https://aiagentsvault.tech/marketplace/a1
 
-7-day free trial. $199/month. No setup fee.
+7-day free trial. No setup fee.
 
-— Saleh Hira
-AI Agents Vault
+SK
+AI Agents Vault Tech
+outreach@cloudripple.org
+aiagentsvault.tech
 
 ---
 
 ### Email 2 — Day 3 (Follow-up)
-Subject: Re: [Restaurant Name] — quick question
+Subject: Re: {{company}} — quick question
 
-Hi [First Name],
+Hi {{first_name}},
 
-Quick question — on a Friday night, how many calls does [Restaurant Name] miss while your team is serving?
+Quick question — on a Friday night, how many calls does {{company}} miss while your team is serving?
 
-Bella handles every one of those. Books the reservation, confirms details, answers questions about the menu or hours.
+Bella handles every one of those. Books the reservation, confirms details, answers menu questions.
 
-Free trial: https://buy.stripe.com/dRmcMYg8KcC2ch37Rabsc00
+See it live (60 sec): https://aiagentsvault.tech/marketplace/a1
 
 Takes 5 minutes to set up.
 
-— Saleh
+— SK
+AI Agents Vault Tech
+outreach@cloudripple.org
+aiagentsvault.tech
 
 ---
 
 ### Email 3 — Day 6 (Final)
-Subject: Closing the loop — [Restaurant Name]
+Subject: Closing the loop — {{company}}
 
-Hi [First Name],
+Hi {{first_name}},
 
-Last note. If missed reservation calls aren't a pain point right now, totally understand.
+Last note. If missed reservation calls aren't a pain point for {{company}} right now, totally understand.
 
-Free trial link: https://buy.stripe.com/dRmcMYg8KcC2ch37Rabsc00
+Demo is here anytime: https://aiagentsvault.tech/marketplace/a1
 
-Here anytime you're ready.
+Feel free to reach out anytime — happy to help.
 
-— Saleh Hira | AI Agents Vault
+SK
+AI Agents Vault Tech
+outreach@cloudripple.org
+aiagentsvault.tech
