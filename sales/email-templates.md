@@ -46,7 +46,7 @@ Dental practices using DentaDesk are capturing 12–18 more calls per week — c
 
 See it live (60 sec): https://aiagentsvault.tech/marketplace/a11
 
-Happy to answer any questions on a quick call.
+PS — want to hear it instead of reading about it? Reply with your number and my AI agent will call you. Yes, the same one you'd be buying.
 
 — SK
 AI Agents Vault Tech
@@ -111,7 +111,7 @@ HomeConnect captures every call to {{company}}, qualifies the buyer, and schedul
 
 See it live (60 sec): https://aiagentsvault.tech/marketplace/a9
 
-Want me to set it up for you this week?
+PS — want to hear it instead of reading about it? Reply with your number and my AI agent will call you. Yes, the same one you'd be buying.
 
 — SK
 AI Agents Vault Tech
@@ -174,7 +174,7 @@ LexAssist qualifies every caller to {{company}} by practice area, answers after 
 
 See it live (60 sec): https://aiagentsvault.tech/marketplace/a10
 
-Want a quick walkthrough this week?
+PS — want to hear it instead of reading about it? Reply with your number and my AI agent will call you. Yes, the same one you'd be buying.
 
 — Saleh
 
@@ -229,7 +229,7 @@ Bella handles every one of those. Books the reservation, confirms details, answe
 
 See it live (60 sec): https://aiagentsvault.tech/marketplace/a1
 
-Takes 5 minutes to set up.
+PS — want to hear it instead of reading about it? Reply with your number and my AI agent will call you. Yes, the same one you'd be buying.
 
 — SK
 AI Agents Vault Tech
