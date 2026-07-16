@@ -1,11 +1,27 @@
 # Cold Email Templates — AI Agents Vault
 # 4 Agents × 3 Emails Each = 12 Templates
 #
-# These match the LIVE Apollo sequences (updated 2026-07-07 with {{company}} personalization).
-# {{first_name}} and {{company}} are Apollo dynamic variables — {{company}} renders the
-# contact's company name (e.g. "Entwined Wine & Cocktail Bar", "Hammerman Rosen").
-# Changes from v1: business name in every subject + opener, question-led first lines,
-# price removed from all Email 1s (still in Email 2s).
+# v3 — REWRITTEN 2026-07-13 after 157 contacted / 0 replies on v2.
+# {{first_name}} and {{company}} are Apollo dynamic variables.
+#
+# WHY v2 FAILED (diagnosis before rewrite):
+#   1. CTA was "click my demo link" → measured 0 clicks. A click-CTA can't produce replies.
+#   2. The best line ("reply with your number and my AI agent will call you") was buried
+#      as a PS on Email 2. It's now the PRIMARY CTA of Email 1 — it's a reply-CTA AND
+#      the demo is the product itself.
+#   3. FABRICATED CLAIMS REMOVED: "Dental practices using DentaDesk are capturing 12–18
+#      more calls per week" implied customers/results we do not have. Also removed the
+#      unsourced stats (30–40%, 67%, 42%). This matches the Jul 3 decision to carry no
+#      fake social proof. DO NOT RE-ADD invented numbers.
+#   4. Follow-ups restated Email 1. Each touch now adds a genuinely new angle.
+#
+# v3 PRINCIPLES:
+#   - One ask per email, and the ask is answerable BY REPLYING.
+#   - No link in Email 1 (better deliverability + forces a reply, not a click).
+#   - Ask questions the owner answers from their own experience — more persuasive than
+#     any stat we could cite, and we don't have to invent anything.
+#   - ~60–80 words. Founder-direct voice. We're new; lean into it rather than fake scale.
+#   - Email 3 is a permission-to-close breakup — historically the highest-reply email.
 
 ---
 
@@ -13,65 +29,56 @@
 Demo: https://aiagentsvault.tech/marketplace/a11
 Trial: https://buy.stripe.com/9B6dR27CegSiepbefybsc06
 
-### Email 1 — Day 1 (Pain hook)
-Subject: {{company}} — missed calls after 3pm?
+### Email 1 — Day 1 (Reply-CTA, no link)
+Subject: who answers {{company}}'s phone at 2pm?
 
 Hi {{first_name}},
 
-Does {{company}} have front-desk coverage while your team is with patients? Dental offices miss 30–40% of incoming calls during appointments — and each missed call is a potential patient worth $1,200–$3,000 in lifetime value.
+Genuine question — when your team is chairside and the phone rings at {{company}}, who picks up?
 
-I built DentaDesk — an AI receptionist that answers every call 24/7, books appointments, verifies insurance, and sounds completely human.
+I built DentaDesk, an AI receptionist that answers 24/7, books appointments, and verifies insurance. It sounds human enough that most callers don't notice.
 
-60-second live demo: https://aiagentsvault.tech/marketplace/a11
+Easiest way to judge it: reply with your number and it'll call you in about a minute. You'll know in 30 seconds whether it's any good.
 
-7-day free trial. No credit card. No setup fee.
-
-Worth a quick look?
+Want me to have it call?
 
 SK
 AI Agents Vault Tech
 outreach@cloudripple.org
-aiagentsvault.tech
 
 ---
 
-### Email 2 — Day 3 (Follow-up + social proof)
-Subject: Re: {{company}} — quick follow up
+### Email 2 — Day 3 (New angle: the math, not a restatement)
+Subject: Re: who answers {{company}}'s phone at 2pm?
 
 Hi {{first_name}},
 
-Just wanted to follow up on my note from a couple days ago.
+Following up once.
 
-Dental practices using DentaDesk are capturing 12–18 more calls per week — calls that used to go to voicemail or ring out. At $299/month, it pays for itself with one extra new patient booking at {{company}}.
+The math that made me build this: one missed call is usually one new patient, and a new patient is worth a few thousand over their time with you. It doesn't take many misses a month before it's real money — you'd know that number better than I would.
 
-See it live (60 sec): https://aiagentsvault.tech/marketplace/a11
+DentaDesk is $299/mo, 7-day free trial, no card.
 
-PS — want to hear it instead of reading about it? Reply with your number and my AI agent will call you. Yes, the same one you'd be buying.
+Still happy to have it call you — just send a number. Or hear it here (60 sec): https://aiagentsvault.tech/marketplace/a11
 
-— SK
-AI Agents Vault Tech
-outreach@cloudripple.org
-aiagentsvault.tech
+SK
 
 ---
 
-### Email 3 — Day 6 (Final, low pressure)
-Subject: Closing the loop — {{company}}
+### Email 3 — Day 6 (Permission-to-close breakup)
+Subject: should I close your file?
 
 Hi {{first_name}},
 
-Last email from me, I promise.
+Haven't heard back, which usually means one of three things: it's not a priority, I'm emailing the wrong person, or I just caught you at a bad week.
 
-If missed calls aren't a problem for {{company}} right now, no worries at all. Demo is here whenever you're ready:
+If it's the first — reply "no" and I'll stop. Genuinely no hard feelings.
 
-https://aiagentsvault.tech/marketplace/a11
-
-Feel free to reach out anytime — happy to answer questions.
+If it's the second — who should I be talking to at {{company}}?
 
 SK
 AI Agents Vault Tech
 outreach@cloudripple.org
-aiagentsvault.tech
 
 ---
 ---
@@ -80,61 +87,56 @@ aiagentsvault.tech
 Demo: https://aiagentsvault.tech/marketplace/a9
 Trial: https://buy.stripe.com/8x28wI3lY45w6WJ1sMbsc04
 
-### Email 1 — Day 1 (Pain hook)
-Subject: {{company}} — leads calling after hours?
+### Email 1 — Day 1 (Reply-CTA, no link)
+Subject: what happens when a buyer calls you at 9pm?
 
 Hi {{first_name}},
 
-What happens when a buyer calls {{company}} at 9pm? Real estate agents lose 67% of leads who call after hours and get voicemail — those buyers just call the next agent on Zillow.
+Honest question — when a buyer calls {{company}} at 9pm and you're at dinner, what happens to that lead?
 
-I built HomeConnect — an AI agent that answers every call, qualifies leads, schedules showings, and captures buyer info 24/7. Sounds completely human.
+I built HomeConnect, an AI agent that answers every call, qualifies the buyer, and books the showing — at any hour. It sounds human.
 
-Live demo (60 sec): https://aiagentsvault.tech/marketplace/a9
+Easiest way to judge it: reply with your number and it'll call you in about a minute. You'll know in 30 seconds if it's any good.
 
-7-day free trial. No setup fee.
+Want me to have it call?
 
 SK
 AI Agents Vault Tech
 outreach@cloudripple.org
-aiagentsvault.tech
 
 ---
 
-### Email 2 — Day 3 (Follow-up)
-Subject: Re: {{company}} — one more thing
+### Email 2 — Day 3 (New angle: the competitor, not a restatement)
+Subject: Re: what happens when a buyer calls you at 9pm?
 
 Hi {{first_name}},
 
-In today's market, a single missed lead can mean a $15,000–$25,000 lost commission.
+One follow-up.
 
-HomeConnect captures every call to {{company}}, qualifies the buyer, and schedules the showing — even at 10pm on a Sunday.
+The part that bothers me about after-hours leads isn't the voicemail — it's that the buyer doesn't wait. They scroll down and call the next agent. You never even know the lead existed.
 
-See it live (60 sec): https://aiagentsvault.tech/marketplace/a9
+HomeConnect picks up so that call never reaches the next name on the list. $299/mo, 7-day free trial, no setup fee.
 
-PS — want to hear it instead of reading about it? Reply with your number and my AI agent will call you. Yes, the same one you'd be buying.
+Send me a number and it'll call you. Or hear it here (60 sec): https://aiagentsvault.tech/marketplace/a9
 
-— SK
-AI Agents Vault Tech
-outreach@cloudripple.org
-aiagentsvault.tech
+SK
 
 ---
 
-### Email 3 — Day 6 (Final)
-Subject: Last note — {{company}}
+### Email 3 — Day 6 (Permission-to-close breakup)
+Subject: should I close your file?
 
 Hi {{first_name}},
 
-Wrapping up my outreach. If after-hours lead capture isn't on {{company}}'s radar right now, totally fine.
+No reply from me usually means one of three things: not a priority, wrong person, or bad timing.
 
-Demo is here whenever you're ready: https://aiagentsvault.tech/marketplace/a9
+If it's the first — just reply "no" and I'll stop reaching out.
 
-Reach out anytime — happy to help.
+If it's the second — who handles this at {{company}}?
 
 SK
 AI Agents Vault Tech
 outreach@cloudripple.org
-aiagentsvault.tech
 
 ---
 ---
@@ -143,53 +145,56 @@ aiagentsvault.tech
 Demo: https://aiagentsvault.tech/marketplace/a10
 Trial: https://buy.stripe.com/eVqdR2cWy31sgxj6N6bsc05
 
-### Email 1 — Day 1 (Pain hook)
-Subject: {{company}} — intake calls going to voicemail?
+### Email 1 — Day 1 (Reply-CTA, no link)
+Subject: who takes {{company}}'s intake calls after 6pm?
 
 Hi {{first_name}},
 
-Who answers the phone at {{company}} after hours? Law firms miss 42% of potential client calls — and most of those callers don't leave a message. They just call the next firm on Google.
+Quick question — when someone calls {{company}} at 8pm having just been in an accident, who answers?
 
-I built LexAssist — an AI intake agent that answers every call 24/7, qualifies leads by practice area and urgency, captures case details, and schedules consultations. Sounds completely human, never puts anyone on hold.
+I built LexAssist, an AI intake agent that answers 24/7, qualifies by practice area and urgency, captures case details, and books the consult. It sounds human and never puts anyone on hold.
 
-Live demo: https://aiagentsvault.tech/marketplace/a10
+Easiest way to judge it: reply with your number and it'll call you in about a minute.
 
-7-day free trial. No credit card. Works for personal injury, immigration, family law, and more.
+Want me to have it call?
 
 SK
 AI Agents Vault Tech
 outreach@cloudripple.org
-aiagentsvault.tech
 
 ---
 
-### Email 2 — Day 3 (Follow-up)
-Subject: Re: {{company}} — LexAssist
+### Email 2 — Day 3 (New angle: urgency of legal callers)
+Subject: Re: who takes {{company}}'s intake calls after 6pm?
 
 Hi {{first_name}},
 
-One missed personal injury intake can be $50,000+ in lost contingency fees.
+One follow-up, then I'll leave it.
 
-LexAssist qualifies every caller to {{company}} by practice area, answers after hours, and books consultations automatically — at $399/month.
+What's different about legal intake is the caller's urgency. Someone looking for a PI attorney at 8pm isn't shopping around next week — they're calling down the list tonight until a human picks up. Voicemail is the same as losing them.
 
-See it live (60 sec): https://aiagentsvault.tech/marketplace/a10
+LexAssist answers that call. $399/mo, 7-day free trial, no card.
 
-PS — want to hear it instead of reading about it? Reply with your number and my AI agent will call you. Yes, the same one you'd be buying.
+Send a number and it'll call you. Or hear it (60 sec): https://aiagentsvault.tech/marketplace/a10
 
-— Saleh
+SK
 
 ---
 
-### Email 3 — Day 6 (Final)
-Subject: Last note from me — {{company}}
+### Email 3 — Day 6 (Permission-to-close breakup)
+Subject: should I close your file?
 
 Hi {{first_name}},
 
-Last message. If intake automation isn't the right fit for {{company}} right now, no worries.
+Haven't heard back — usually that's not a priority, wrong person, or bad timing.
 
-Demo is here when you're ready: https://aiagentsvault.tech/marketplace/a10
+If it's the first, reply "no" and I'll stop.
 
-SK | AI Agents Vault Tech | outreach@cloudripple.org | aiagentsvault.tech
+If it's the second, who runs intake at {{company}}?
+
+SK
+AI Agents Vault Tech
+outreach@cloudripple.org
 
 ---
 ---
@@ -198,58 +203,53 @@ SK | AI Agents Vault Tech | outreach@cloudripple.org | aiagentsvault.tech
 Demo: https://aiagentsvault.tech/marketplace/a1
 Trial: https://buy.stripe.com/dRmcMYg8KcC2ch37Rabsc00
 
-### Email 1 — Day 1 (Pain hook)
-Subject: {{company}} — reservation calls during dinner rush?
+### Email 1 — Day 1 (Reply-CTA, no link)
+Subject: how many calls does {{company}} miss on a Friday night?
 
 Hi {{first_name}},
 
-How many calls does {{company}} miss during the dinner rush? For most restaurants it's about a third — and every missed call is a table that books somewhere else.
+Real question — on a Friday at 7pm, when every server is on the floor, how many calls does {{company}} actually miss?
 
-I built Bella — an AI receptionist that answers every call, takes reservations, handles menu questions, and manages your waitlist 24/7. Sounds warm and completely human.
+You'd know better than me. I built Bella, an AI receptionist that answers every one — takes the reservation, handles menu questions, manages the waitlist. She sounds warm and human.
 
-Hear her handle a real call (60 sec, no signup): https://aiagentsvault.tech/marketplace/a1
+Easiest way to judge her: reply with your number and she'll call you in about a minute.
 
-7-day free trial. No setup fee.
+Want me to have her call?
 
 SK
 AI Agents Vault Tech
 outreach@cloudripple.org
-aiagentsvault.tech
 
 ---
 
-### Email 2 — Day 3 (Follow-up)
-Subject: Re: {{company}} — quick question
+### Email 2 — Day 3 (New angle: the caller books elsewhere)
+Subject: Re: how many calls does {{company}} miss on a Friday night?
 
 Hi {{first_name}},
 
-Quick question — on a Friday night, how many calls does {{company}} miss while your team is serving?
+Following up once.
 
-Bella handles every one of those. Books the reservation, confirms details, answers menu questions.
+The thing about a missed reservation call is you never see the cost. The caller doesn't try again — they just book the place down the street. It's a table you never knew you lost.
 
-See it live (60 sec): https://aiagentsvault.tech/marketplace/a1
+Bella is $199/mo with a 7-day free trial, no setup fee.
 
-PS — want to hear it instead of reading about it? Reply with your number and my AI agent will call you. Yes, the same one you'd be buying.
+Send me a number and she'll call you. Or hear her handle a real call (60 sec): https://aiagentsvault.tech/marketplace/a1
 
-— SK
-AI Agents Vault Tech
-outreach@cloudripple.org
-aiagentsvault.tech
+SK
 
 ---
 
-### Email 3 — Day 6 (Final)
-Subject: Closing the loop — {{company}}
+### Email 3 — Day 6 (Permission-to-close breakup)
+Subject: should I close your file?
 
 Hi {{first_name}},
 
-Last note. If missed reservation calls aren't a pain point for {{company}} right now, totally understand.
+No reply usually means one of three things: not a priority, wrong person, or bad timing.
 
-Demo is here anytime: https://aiagentsvault.tech/marketplace/a1
+If it's the first — reply "no" and I'll stop, no hard feelings.
 
-Feel free to reach out anytime — happy to help.
+If it's the second — who handles the phones at {{company}}?
 
 SK
 AI Agents Vault Tech
 outreach@cloudripple.org
-aiagentsvault.tech
