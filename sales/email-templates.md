@@ -253,3 +253,80 @@ If it's the second — who handles the phones at {{company}}?
 SK
 AI Agents Vault Tech
 outreach@cloudripple.org
+
+---
+
+# v4 — "TOTAL SOLUTION" OFFERS (added 2026-07-25)
+#
+# NEW ANGLE, not a replacement for v3 above. v3 sells one agent (answer the
+# phone). v4 sells the same agent PLUS the modules built this session —
+# missed-call SMS recovery, appointment reminders, review requests — as one
+# bundled "AI Digital Dealer" system instead of a single receptionist.
+#
+# DO NOT LAUNCH v4 until the cloudripple.org SURBL/Sophos delisting clears
+# (see project_next_actions.md) — a stronger offer still won't get replies
+# if it's landing in spam. Once delisting clears (or a fresh domain is live),
+# v4 is the recommended default over v3 for NEW leads; existing v3 contacts
+# who haven't replied can get a v4 email as a genuinely new angle rather than
+# a 4th restatement of v3.
+#
+# Same v3 principles kept: reply-CTA, no link in Email 1, no fabricated
+# stats/results, ~70-90 words, founder-direct voice, Email 3 = breakup.
+#
+# {{company}} and {{first_name}} are still Apollo variables. {{pain_point}}
+# is NOT an Apollo variable — manually swap per vertical using the bracketed
+# options below, or leave as the dental example and adjust before sending
+# to a different sector.
+
+## Vertical pain-point swap-ins (use whichever matches the sequence)
+# - Dental/Medical: "a missed call is a missed patient"
+# - Restaurant: "a missed call is a table that goes to the place down the street"
+# - Law firm: "a missed call is a case that calls the next firm on the list"
+# - Real estate: "a missed call is a buyer who tours a different listing"
+# - Home services: "a missed call is a job that goes to a competitor with a truck out already"
+# - Auto dealership: "a missed call is a buyer who drives onto the next lot"
+
+## TOTAL SOLUTION — Email 1 (Day 1, reply-CTA, no link)
+Subject: what happens after {{company}} misses a call?
+
+Hi {{first_name}},
+
+Most businesses I talk to have someone answering the phone — the part nobody's covering is what happens next. A missed call, a booked lead who never got a reminder, a customer who left happy but was never asked for a review.
+
+I built a system that covers all three: an AI agent that answers and books, texts back anyone who couldn't get through, and follows up automatically after — one system, not three separate tools.
+
+Reply with a number and I'll have it call you so you can hear it work.
+
+SK
+AI Agents Vault Tech
+outreach@cloudripple.org
+
+## TOTAL SOLUTION — Email 2 (Day 3, new angle: what's actually being lost)
+Subject: Re: what happens after {{company}} misses a call?
+
+Hi {{first_name}},
+
+Following up once.
+
+Here's the part most people don't think about: {{pain_point}}. It's not a call you get to see fail — it's just quieter than it should be.
+
+The system I built handles the whole sequence — capture, remind, follow up — instead of just answering. Pricing scales with how much of it you actually want; you don't have to buy the whole thing to start.
+
+Want to see what it sounds like on a real call?
+
+SK
+
+## TOTAL SOLUTION — Email 3 (Day 6, permission-to-close breakup)
+Subject: should I close your file?
+
+Hi {{first_name}},
+
+No reply usually means one of three things: not a priority, wrong person, or bad timing.
+
+If it's the first — reply "no" and I'll stop, no hard feelings.
+
+If it's the second — who handles the phones and follow-up at {{company}}?
+
+SK
+AI Agents Vault Tech
+outreach@cloudripple.org
