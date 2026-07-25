@@ -1,0 +1,285 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AI Digital Dealer — Customer Config",
+  "description": "One record per client. Defines their business, which agent(s) they use, and which modules are enabled. The engine reads this file (or DB row) and activates only what's turned on — no per-client code changes needed.",
+  "type": "object",
+  "required": ["customerId", "business", "modules", "billing", "status"],
+  "properties": {
+    "customerId": {
+      "type": "string",
+      "description": "Unique slug, e.g. 'abc-dental-2026'"
+    },
+    "createdAt": { "type": "string", "format": "date" },
+    "updatedAt": { "type": "string", "format": "date" },
+
+    "business": {
+      "type": "object",
+      "required": ["name", "industry", "phone", "timezone"],
+      "properties": {
+        "name": { "type": "string" },
+        "industry": {
+          "type": "string",
+          "enum": ["restaurant", "dental", "law_firm", "real_estate", "home_services",
+                    "auto_dealership", "healthcare", "salon_spa", "retail", "other"]
+        },
+        "phone": { "type": "string" },
+        "email": { "type": "string", "format": "email" },
+        "website": { "type": "string", "format": "uri" },
+        "address": { "type": "string" },
+        "timezone": { "type": "string", "description": "e.g. America/Los_Angeles" },
+        "hours": { "type": "string", "description": "free text or structured hours block" },
+        "services": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Menu items / treatments / listings / practice areas — feeds agent knowledge"
+        },
+        "faq": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "q": { "type": "string" },
+              "a": { "type": "string" }
+            }
+          }
+        },
+        "pricingNotes": { "type": "string", "description": "Approved pricing info the agent is allowed to quote" }
+      }
+    },
+
+    "integrations": {
+      "type": "object",
+      "description": "External systems this client's modules connect to. Only required per-module (see moduleRequirements below).",
+      "properties": {
+        "calendar": {
+          "type": "object",
+          "properties": {
+            "provider": { "type": "string", "enum": ["google_calendar", "calendly", "vapi_native", "none"] },
+            "calendarId": { "type": "string" }
+          }
+        },
+        "crm": {
+          "type": "object",
+          "properties": {
+            "provider": { "type": "string", "enum": ["google_sheet", "airtable", "hubspot", "custom_db", "none"] },
+            "endpoint": { "type": "string" }
+          }
+        },
+        "sms": {
+          "type": "object",
+          "properties": {
+            "provider": { "type": "string", "enum": ["twilio", "none"] },
+            "fromNumber": { "type": "string" }
+          }
+        },
+        "reviewPlatform": {
+          "type": "object",
+          "properties": {
+            "provider": { "type": "string", "enum": ["google_business", "yelp", "none"] },
+            "reviewLink": { "type": "string", "format": "uri" }
+          }
+        }
+      }
+    },
+
+    "modules": {
+      "type": "object",
+      "description": "Master on/off switchboard. Each module has 'enabled' plus module-specific settings, only read if enabled=true.",
+      "properties": {
+
+        "voiceAgent": {
+          "type": "object",
+          "properties": {
+            "enabled": { "type": "boolean", "default": true },
+            "assistantId": { "type": "string", "description": "Vapi assistant ID" },
+            "systemPromptFile": { "type": "string" }
+          }
+        },
+
+        "missedCallRecovery": {
+          "type": "object",
+          "properties": {
+            "enabled": { "type": "boolean", "default": false },
+            "smsDelaySeconds": { "type": "integer", "default": 30 },
+            "template": { "type": "string" }
+          }
+        },
+
+        "appointmentBooking": {
+          "type": "object",
+          "properties": {
+            "enabled": { "type": "boolean", "default": false },
+            "bookingRules": { "type": "string", "description": "slot length, buffer time, blackout days" }
+          }
+        },
+
+        "reminderNoShow": {
+          "type": "object",
+          "properties": {
+            "enabled": { "type": "boolean", "default": false },
+            "reminderOffsets": {
+              "type": "array",
+              "items": { "type": "string" },
+              "default": ["24h", "2h"]
+            },
+            "rescheduleLink": { "type": "string" }
+          }
+        },
+
+        "reviewReputation": {
+          "type": "object",
+          "properties": {
+            "enabled": { "type": "boolean", "default": false },
+            "delayAfterVisitHours": { "type": "integer", "default": 4 },
+            "negativeFeedbackRouting": { "type": "string", "enum": ["private_form", "owner_call", "none"], "default": "private_form" }
+          }
+        },
+
+        "leadReactivation": {
+          "type": "object",
+          "properties": {
+            "enabled": { "type": "boolean", "default": false },
+            "staleAfterDays": { "type": "integer", "default": 30 },
+            "campaignScript": { "type": "string" }
+          }
+        },
+
+        "analyticsDashboard": {
+          "type": "object",
+          "properties": {
+            "enabled": { "type": "boolean", "default": false },
+            "sendFrequency": { "type": "string", "enum": ["weekly", "biweekly", "monthly"], "default": "weekly" },
+            "recipientEmail": { "type": "string", "format": "email" }
+          }
+        },
+
+        "websiteChatCapture": {
+          "type": "object",
+          "properties": {
+            "enabled": { "type": "boolean", "default": false },
+            "widgetId": { "type": "string" }
+          }
+        },
+
+        "adLeadInstantResponse": {
+          "type": "object",
+          "properties": {
+            "enabled": { "type": "boolean", "default": false },
+            "responseWithinSeconds": { "type": "integer", "default": 60 },
+            "adSource": { "type": "string", "enum": ["google_ads", "facebook_ads", "other"] }
+          }
+        },
+
+        "referralRequest": {
+          "type": "object",
+          "properties": {
+            "enabled": { "type": "boolean", "default": false },
+            "triggerEvent": { "type": "string", "enum": ["positive_review", "repeat_visit_count"], "default": "positive_review" },
+            "incentive": { "type": "string", "description": "e.g. '10% off next visit'" }
+          }
+        },
+
+        "quoteEstimateGenerator": {
+          "type": "object",
+          "properties": {
+            "enabled": { "type": "boolean", "default": false },
+            "pricingRulesFile": { "type": "string" }
+          }
+        },
+
+        "waitlistCancellationFiller": {
+          "type": "object",
+          "properties": {
+            "enabled": { "type": "boolean", "default": false }
+          }
+        },
+
+        "upsellCrossSell": {
+          "type": "object",
+          "properties": {
+            "enabled": { "type": "boolean", "default": false },
+            "offerMap": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "afterService": { "type": "string" },
+                  "suggest": { "type": "string" }
+                }
+              }
+            }
+          }
+        },
+
+        "loyaltyRepeatReminder": {
+          "type": "object",
+          "properties": {
+            "enabled": { "type": "boolean", "default": false },
+            "cycleDays": { "type": "integer", "description": "e.g. 180 for a 6-month dental checkup cycle" }
+          }
+        },
+
+        "winBackLapsed": {
+          "type": "object",
+          "properties": {
+            "enabled": { "type": "boolean", "default": false },
+            "lapsedAfterMonths": { "type": "integer", "default": 6 },
+            "offer": { "type": "string" }
+          }
+        },
+
+        "overflowHumanHandoff": {
+          "type": "object",
+          "properties": {
+            "enabled": { "type": "boolean", "default": false },
+            "escalationTriggers": {
+              "type": "array",
+              "items": { "type": "string" },
+              "default": ["angry_caller", "emergency_keyword", "explicit_human_request"]
+            },
+            "forwardToNumber": { "type": "string" }
+          }
+        },
+
+        "consistencyCheck": {
+          "type": "object",
+          "properties": {
+            "enabled": { "type": "boolean", "default": false },
+            "checkFrequencyDays": { "type": "integer", "default": 7 }
+          }
+        },
+
+        "competitorAlerts": {
+          "type": "object",
+          "properties": {
+            "enabled": { "type": "boolean", "default": false },
+            "competitorNames": { "type": "array", "items": { "type": "string" } }
+          }
+        },
+
+        "demandForecast": {
+          "type": "object",
+          "properties": {
+            "enabled": { "type": "boolean", "default": false }
+          }
+        }
+      }
+    },
+
+    "billing": {
+      "type": "object",
+      "required": ["tier", "monthlyPriceUsd", "checkoutUrl"],
+      "properties": {
+        "tier": { "type": "string", "enum": ["starter", "growth", "total_solution", "custom"] },
+        "monthlyPriceUsd": { "type": "number" },
+        "checkoutUrl": { "type": "string", "format": "uri" },
+        "freeTrialDays": { "type": "integer", "default": 7 }
+      }
+    },
+
+    "status": {
+      "type": "string",
+      "enum": ["trial", "active", "paused", "cancelled"]
+    }
+  }
+}

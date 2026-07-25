@@ -1,0 +1,95 @@
+{
+  "customerId": "abc-dental-2026",
+  "createdAt": "2026-07-25",
+  "updatedAt": "2026-07-25",
+
+  "business": {
+    "name": "ABC Dental Group",
+    "industry": "dental",
+    "phone": "+1-555-123-4567",
+    "email": "info@abcdental.com",
+    "website": "https://abcdental.com",
+    "address": "123 Main St, San Diego, CA",
+    "timezone": "America/Los_Angeles",
+    "hours": "Mon-Fri 8am-5pm, Sat 9am-1pm",
+    "services": ["Invisalign", "Dental Implants", "Teeth Whitening", "Emergency Dentistry"],
+    "faq": [
+      { "q": "Do you accept new patients?", "a": "Yes, we are currently accepting new patients." },
+      { "q": "Do you take my insurance?", "a": "We accept most major PPO plans — our team can verify yours." }
+    ],
+    "pricingNotes": "Invisalign consultations are free. Implant pricing varies by case, quoted after exam."
+  },
+
+  "integrations": {
+    "calendar": { "provider": "google_calendar", "calendarId": "abcdental@group.calendar.google.com" },
+    "crm": { "provider": "google_sheet", "endpoint": "https://docs.google.com/spreadsheets/d/EXAMPLE" },
+    "sms": { "provider": "twilio", "fromNumber": "+1-555-987-6543" },
+    "reviewPlatform": { "provider": "google_business", "reviewLink": "https://g.page/r/EXAMPLE/review" }
+  },
+
+  "modules": {
+    "voiceAgent": {
+      "enabled": true,
+      "assistantId": "EXAMPLE-VAPI-ASSISTANT-ID",
+      "systemPromptFile": "agents/dental-receptionist/system-prompt.md"
+    },
+    "missedCallRecovery": {
+      "enabled": true,
+      "smsDelaySeconds": 30,
+      "template": "Sorry we missed your call! This is ABC Dental — reply here and we'll help right away."
+    },
+    "appointmentBooking": {
+      "enabled": true,
+      "bookingRules": "30-min slots, 15-min buffer, closed Sundays"
+    },
+    "reminderNoShow": {
+      "enabled": true,
+      "reminderOffsets": ["24h", "2h"],
+      "rescheduleLink": "https://abcdental.com/reschedule"
+    },
+    "reviewReputation": {
+      "enabled": true,
+      "delayAfterVisitHours": 4,
+      "negativeFeedbackRouting": "private_form"
+    },
+    "leadReactivation": { "enabled": false },
+    "analyticsDashboard": {
+      "enabled": true,
+      "sendFrequency": "weekly",
+      "recipientEmail": "owner@abcdental.com"
+    },
+    "websiteChatCapture": { "enabled": false },
+    "adLeadInstantResponse": { "enabled": false },
+    "referralRequest": { "enabled": false },
+    "quoteEstimateGenerator": { "enabled": false },
+    "waitlistCancellationFiller": { "enabled": false },
+    "upsellCrossSell": {
+      "enabled": true,
+      "offerMap": [
+        { "afterService": "Teeth Whitening", "suggest": "Invisalign consultation" }
+      ]
+    },
+    "loyaltyRepeatReminder": {
+      "enabled": true,
+      "cycleDays": 180
+    },
+    "winBackLapsed": { "enabled": false },
+    "overflowHumanHandoff": {
+      "enabled": true,
+      "escalationTriggers": ["angry_caller", "emergency_keyword", "explicit_human_request"],
+      "forwardToNumber": "+1-555-123-9999"
+    },
+    "consistencyCheck": { "enabled": false },
+    "competitorAlerts": { "enabled": false },
+    "demandForecast": { "enabled": false }
+  },
+
+  "billing": {
+    "tier": "growth",
+    "monthlyPriceUsd": 699,
+    "checkoutUrl": "https://buy.stripe.com/EXAMPLE",
+    "freeTrialDays": 7
+  },
+
+  "status": "trial"
+}

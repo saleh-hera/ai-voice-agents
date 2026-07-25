@@ -8,6 +8,11 @@ __pycache__/
 .venv/
 venv/
 
+# Backend engine local DB
+backend/*.db
+backend/*.sqlite3
+
 # OS
 .DS_Store
 Thumbs.db
+backend/server.log
