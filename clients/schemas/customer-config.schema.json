@@ -194,6 +194,15 @@
           }
         },
 
+        "callSentimentAnalyzer": {
+          "type": "object",
+          "description": "Sales — Inbound. Detects caller frustration/sentiment in real time and can trigger early escalation before a bad call gets worse.",
+          "properties": {
+            "enabled": { "type": "boolean", "default": false },
+            "escalateOnNegativeSentiment": { "type": "boolean", "default": true }
+          }
+        },
+
         "upsellCrossSell": {
           "type": "object",
           "properties": {
@@ -225,6 +234,24 @@
             "enabled": { "type": "boolean", "default": false },
             "lapsedAfterMonths": { "type": "integer", "default": 6 },
             "offer": { "type": "string" }
+          }
+        },
+
+        "customerSupportAgent": {
+          "type": "object",
+          "description": "Customer Service. Handles complaints, FAQs, and support tickets 24/7 — separate from the sales agent, only escalating what truly needs a human.",
+          "properties": {
+            "enabled": { "type": "boolean", "default": false },
+            "ticketingSystem": { "type": "string", "enum": ["internal", "zendesk", "intercom", "none"], "default": "internal" }
+          }
+        },
+
+        "liveChatSupportAgent": {
+          "type": "object",
+          "description": "Customer Service. Answers website support questions in real time via chat widget, separate from the sales-focused websiteChatCapture module.",
+          "properties": {
+            "enabled": { "type": "boolean", "default": false },
+            "widgetId": { "type": "string" }
           }
         },
 
@@ -262,6 +289,192 @@
           "properties": {
             "enabled": { "type": "boolean", "default": false }
           }
+        },
+
+        "pipelineSnapshotReport": {
+          "type": "object",
+          "description": "Reliability & Reporting. Shows deal value and lead count by stage at a glance.",
+          "properties": {
+            "enabled": { "type": "boolean", "default": false }
+          }
+        },
+
+        "winLossAnalysisAgent": {
+          "type": "object",
+          "description": "Reliability & Reporting. Explains why deals closed or stalled, based on call and CRM patterns.",
+          "properties": {
+            "enabled": { "type": "boolean", "default": false }
+          }
+        },
+
+        "revenueForecastAgent": {
+          "type": "object",
+          "description": "Reliability & Reporting. Projects revenue 30/60/90 days out from current pipeline and conversion rates.",
+          "properties": {
+            "enabled": { "type": "boolean", "default": false },
+            "forecastWindowDays": { "type": "integer", "default": 90 }
+          }
+        },
+
+        "ownerAlertAgent": {
+          "type": "object",
+          "description": "Reliability & Reporting. Texts or emails the owner immediately for high-value events (big sale, VIP complaint, a call that went badly). Backed by the same notify_owner() integration as the backend engine.",
+          "properties": {
+            "enabled": { "type": "boolean", "default": false },
+            "triggerEvents": {
+              "type": "array",
+              "items": { "type": "string" },
+              "default": ["high_value_booking", "negative_sentiment_call", "vip_complaint"]
+            },
+            "channel": { "type": "string", "enum": ["sms", "email", "both"], "default": "email" }
+          }
+        },
+
+        "budgetRoiReportAgent": {
+          "type": "object",
+          "description": "Budget. Shows monthly cost vs. estimated value generated, with net ROI.",
+          "properties": {
+            "enabled": { "type": "boolean", "default": false },
+            "valuePerActionUsd": { "type": "number", "default": 15, "description": "Illustrative dollar value assumed per automated customer action, used to estimate generated value." }
+          }
+        },
+
+        "financingPlanAgent": {
+          "type": "object",
+          "description": "Budget. Lets the customer split the one-time setup fee into monthly installments instead of paying upfront.",
+          "properties": {
+            "enabled": { "type": "boolean", "default": false },
+            "installments": { "type": "integer", "default": 3 },
+            "financingFeePercent": { "type": "number", "default": 8 }
+          }
+        },
+
+        "costAnomalyAlertAgent": {
+          "type": "object",
+          "description": "Budget. Flags unexpected spend spikes (ad budget, usage overages) before they become a surprise bill.",
+          "properties": {
+            "enabled": { "type": "boolean", "default": false },
+            "thresholdPercentOverBudget": { "type": "number", "default": 20 }
+          }
+        },
+
+        "outboundProspectingAgent": {
+          "type": "object",
+          "description": "Leads — Outbound. Builds targeted lead lists for the business's ideal customer.",
+          "properties": {
+            "enabled": { "type": "boolean", "default": false },
+            "targetCriteria": { "type": "string", "description": "e.g. title/industry/location filters" }
+          }
+        },
+
+        "leadEnrichmentScoringAgent": {
+          "type": "object",
+          "description": "Leads — Outbound. Fills in missing contact/firmographic data and ranks every prospect by fit, so raw lead lists become actionable.",
+          "properties": {
+            "enabled": { "type": "boolean", "default": false },
+            "scoringCriteria": { "type": "string" }
+          }
+        },
+
+        "coldEmailOutreachAgent": {
+          "type": "object",
+          "description": "Leads — Outbound. Drafts and sends B2B-style cold email campaigns on the business's behalf.",
+          "properties": {
+            "enabled": { "type": "boolean", "default": false },
+            "dailySendLimit": { "type": "integer", "default": 40 },
+            "sendingDomain": { "type": "string" }
+          }
+        },
+
+        "adCampaignBuilderAgent": {
+          "type": "object",
+          "description": "Leads — Outbound. Builds and launches new ad campaigns/creative from scratch (distinct from adOptimizerAgent, which only tunes an existing campaign).",
+          "properties": {
+            "enabled": { "type": "boolean", "default": false },
+            "platform": { "type": "string", "enum": ["google_ads", "facebook_ads", "both"] },
+            "monthlyBudgetUsd": { "type": "integer" }
+          }
+        },
+
+        "retargetingAdsAgent": {
+          "type": "object",
+          "description": "Leads — Outbound. Re-engages website visitors and past leads who didn't convert the first time, via retargeting/remarketing ads.",
+          "properties": {
+            "enabled": { "type": "boolean", "default": false },
+            "platform": { "type": "string", "enum": ["google_ads", "facebook_ads", "both"] }
+          }
+        },
+
+        "coldCallingSetterAgent": {
+          "type": "object",
+          "description": "Leads — Outbound. ⚠️ COMPLIANCE: outbound AI calls to qualify/set appointments. Only for lists with prior express consent/opt-in (TCPA) — never for cold consumer lists scraped without consent.",
+          "properties": {
+            "enabled": { "type": "boolean", "default": false },
+            "consentVerified": { "type": "boolean", "default": false, "description": "Must be true and backed by a real opt-in record before this module may run." }
+          }
+        },
+
+        "dealForecastAgent": {
+          "type": "object",
+          "description": "Leads — Outbound. Predicts which leads are likely to close in the next 30-90 days based on engagement patterns.",
+          "properties": {
+            "enabled": { "type": "boolean", "default": false },
+            "forecastWindowDays": { "type": "integer", "default": 90 }
+          }
+        },
+
+        "blogSeoContentAgent": {
+          "type": "object",
+          "description": "Marketing. Writes ongoing blog/article content targeting the business's search terms.",
+          "properties": {
+            "enabled": { "type": "boolean", "default": false },
+            "postsPerMonth": { "type": "integer", "default": 2 },
+            "targetKeywords": { "type": "array", "items": { "type": "string" } }
+          }
+        },
+
+        "emailDripSequenceAgent": {
+          "type": "object",
+          "description": "Marketing. Builds multi-step email sequences for new prospects (distinct from newsletterAgent, which nurtures existing customers).",
+          "properties": {
+            "enabled": { "type": "boolean", "default": false },
+            "sequenceSteps": { "type": "integer", "default": 3 }
+          }
+        },
+
+        "newsletterAgent": {
+          "type": "object",
+          "description": "Marketing. Sends promos and updates to the business's own opted-in customer list (distinct from emailDripSequenceAgent, which targets new prospects).",
+          "properties": {
+            "enabled": { "type": "boolean", "default": false },
+            "sendFrequency": { "type": "string", "enum": ["weekly", "biweekly", "monthly"], "default": "monthly" }
+          }
+        },
+
+        "emailPerformanceReport": {
+          "type": "object",
+          "description": "Marketing. Tracks open rate, click rate, and unsubscribes across every email campaign (newsletter + drip sequence).",
+          "properties": {
+            "enabled": { "type": "boolean", "default": false }
+          }
+        },
+
+        "funnelLandingPageAgent": {
+          "type": "object",
+          "description": "Marketing. Builds opt-in landing pages and lead magnets for campaigns.",
+          "properties": {
+            "enabled": { "type": "boolean", "default": false },
+            "pageUrl": { "type": "string" }
+          }
+        },
+
+        "formAbandonmentRecoveryAgent": {
+          "type": "object",
+          "description": "Marketing. Follows up automatically when someone starts but doesn't finish a form, quote request, or online booking — completes the funnel started by funnelLandingPageAgent.",
+          "properties": {
+            "enabled": { "type": "boolean", "default": false },
+            "followUpDelayMinutes": { "type": "integer", "default": 30 }
+          }
         }
       }
     },
@@ -272,6 +485,7 @@
       "properties": {
         "tier": { "type": "string", "enum": ["starter", "growth", "total_solution", "custom"] },
         "monthlyPriceUsd": { "type": "number" },
+        "setupFeeUsd": { "type": "number", "description": "One-time build/integration fee, billed once the trial converts. Scales with tier: 299 starter / 599 growth / 999 total_solution in the demo pricing." },
         "checkoutUrl": { "type": "string", "format": "uri" },
         "freeTrialDays": { "type": "integer", "default": 7 }
       }

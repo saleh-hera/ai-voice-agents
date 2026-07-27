@@ -2,7 +2,7 @@
   "name": "Nova Support - 24/7 Customer Service Agent",
   "assistantId": "0969aa62-f3b8-4406-b700-67ea3f87014e",
   "industry": "Customer Support (Any Business)",
-  "firstMessage": "Hi, this is Nova from support. I'm here to help — tell me what's going on and I'll get it sorted for you.",
+  "firstMessage": "Hi, this is Nova from support. I'm here to help \u00e2\u20ac\u201d tell me what's going on and I'll get it sorted for you.",
   "voice": {
     "provider": "vapi",
     "voiceId": "female-calm",
@@ -15,10 +15,10 @@
   },
   "pricing": {
     "model": "subscription",
-    "amountUsd": 199,
+    "amountUsd": 399,
     "interval": "month",
     "freeTrialDays": 7,
-    "checkoutUrl": "https://buy.stripe.com/4gM00ccWy9pQ4OBdbubsc02"
+    "checkoutUrl": "https://buy.stripe.com/4gM6oAe0CfOea8Vc7qbsc09"
   },
   "demoUrl": "https://vapi.ai/?demo=true&shareKey=6b3a74e2-b47c-4c0f-93d4-a3d4b8e5d674&assistantId=0969aa62-f3b8-4406-b700-67ea3f87014e"
 }

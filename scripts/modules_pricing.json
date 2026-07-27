@@ -1,0 +1,103 @@
+{
+  "currency": "usd",
+  "baseAgent": { "id": "voiceAgent", "name": "AI Sales/Revenue Agent (Base)", "price": 399 },
+  "tiers": [
+    { "name": "Starter", "setupFee": 299 },
+    { "name": "Growth", "setupFee": 599 },
+    { "name": "Total Solution", "setupFee": 999 }
+  ],
+  "stages": [
+    {
+      "key": "sales_inbound",
+      "name": "Sales — Inbound",
+      "modules": [
+        { "id": "voiceAgent", "name": "AI Sales/Revenue Agent", "price": 399, "required": true },
+        { "id": "missedCallRecovery", "name": "Missed-Call SMS Recovery", "price": 150 },
+        { "id": "websiteChatCapture", "name": "Website/Chat Lead Capture", "price": 130 },
+        { "id": "appointmentBooking", "name": "Appointment/Booking Handler", "price": 90 },
+        { "id": "reminderNoShow", "name": "Reminder & No-Show Reducer", "price": 140 },
+        { "id": "quoteEstimateGenerator", "name": "Quote/Estimate Generator", "price": 110 },
+        { "id": "waitlistFiller", "name": "Waitlist/Cancellation Filler", "price": 90 },
+        { "id": "callSentimentAnalyzer", "name": "Call Sentiment & Effectiveness Analyzer", "price": 130 }
+      ]
+    },
+    {
+      "key": "leads_outbound",
+      "name": "Leads — Outbound",
+      "modules": [
+        { "id": "outboundProspectingAgent", "name": "Outbound Prospecting Agent", "price": 170 },
+        { "id": "leadEnrichmentScoringAgent", "name": "Lead Enrichment & Scoring Agent", "price": 140 },
+        { "id": "coldEmailOutreachAgent", "name": "Cold Email Outreach Agent", "price": 150 },
+        { "id": "adLeadInstantResponse", "name": "Ad-Lead Instant Response", "price": 180 },
+        { "id": "adCampaignBuilderAgent", "name": "Ad Campaign Builder", "price": 200 },
+        { "id": "retargetingAdsAgent", "name": "Retargeting/Remarketing Ads Agent", "price": 150 },
+        { "id": "coldCallingSetterAgent", "name": "AI Cold-Calling Setter", "price": 220 },
+        { "id": "dealForecastAgent", "name": "Deal Forecast & Win-Probability Agent", "price": 160 }
+      ]
+    },
+    {
+      "key": "marketing",
+      "name": "Marketing",
+      "modules": [
+        { "id": "socialContentAgent", "name": "Social Media Content Agent", "price": 140 },
+        { "id": "blogSeoContentAgent", "name": "Blog/SEO Content Writer", "price": 150 },
+        { "id": "gbpAgent", "name": "Google Business Profile Agent", "price": 110 },
+        { "id": "localSeoAgent", "name": "Local SEO Agent", "price": 170 },
+        { "id": "adOptimizerAgent", "name": "Ad Campaign Optimizer", "price": 190 },
+        { "id": "emailDripSequenceAgent", "name": "Email Drip Sequence Builder", "price": 130 },
+        { "id": "newsletterAgent", "name": "Newsletter/SMS Nurture Agent", "price": 110 },
+        { "id": "emailPerformanceReport", "name": "Email Campaign Performance Report", "price": 70 },
+        { "id": "funnelLandingPageAgent", "name": "Funnel & Landing Page Builder", "price": 160 },
+        { "id": "formAbandonmentRecoveryAgent", "name": "Form/Checkout Abandonment Recovery", "price": 120 },
+        { "id": "referralFinderAgent", "name": "Referral/Partnership Finder", "price": 90 },
+        { "id": "contentRepurposeAgent", "name": "Content Repurposing Agent", "price": 90 },
+        { "id": "brandMentionAgent", "name": "Brand Mention Monitor", "price": 80 },
+        { "id": "conversionOptimizerAgent", "name": "Website Conversion Optimizer", "price": 130 }
+      ]
+    },
+    {
+      "key": "retain",
+      "name": "Retain",
+      "modules": [
+        { "id": "reviewReputation", "name": "Review & Reputation Agent", "price": 130 },
+        { "id": "leadReactivation", "name": "Old-Lead Reactivation", "price": 160 },
+        { "id": "referralRequest", "name": "Referral Request Agent", "price": 110 },
+        { "id": "upsellCrossSell", "name": "Upsell/Cross-Sell Agent", "price": 90 },
+        { "id": "loyaltyReminder", "name": "Loyalty/Repeat-Visit Reminder", "price": 90 },
+        { "id": "winBackLapsed", "name": "Win-Back Lapsed Customers", "price": 140 }
+      ]
+    },
+    {
+      "key": "customer_service",
+      "name": "Customer Service",
+      "modules": [
+        { "id": "customerSupportAgent", "name": "Customer Support & Ticketing Agent", "price": 170 },
+        { "id": "liveChatSupportAgent", "name": "Live Chat Support Agent", "price": 100 }
+      ]
+    },
+    {
+      "key": "report",
+      "name": "Reliability & Reporting",
+      "modules": [
+        { "id": "analyticsDashboard", "name": "Analytics Dashboard", "price": 80 },
+        { "id": "overflowHandoff", "name": "Overflow Human Handoff", "price": 70 },
+        { "id": "consistencyCheck", "name": "Multi-Channel Consistency Check", "price": 50 },
+        { "id": "competitorAlerts", "name": "Competitor/Market Alerts", "price": 80 },
+        { "id": "demandForecast", "name": "Staffing/Demand Forecast", "price": 110 },
+        { "id": "pipelineSnapshotReport", "name": "Pipeline Snapshot Report", "price": 70 },
+        { "id": "winLossAnalysisAgent", "name": "Win/Loss Analysis Agent", "price": 90 },
+        { "id": "revenueForecastAgent", "name": "Revenue Forecast Agent", "price": 110 },
+        { "id": "ownerAlertAgent", "name": "Owner/CEO Instant Alerts", "price": 60 }
+      ]
+    },
+    {
+      "key": "budget",
+      "name": "Budget",
+      "modules": [
+        { "id": "budgetRoiReportAgent", "name": "Budget & ROI Report", "price": 80 },
+        { "id": "financingPlanAgent", "name": "Financing & Payment Plan Options", "price": 40 },
+        { "id": "costAnomalyAlertAgent", "name": "Cost/Spend Anomaly Alert", "price": 60 }
+      ]
+    }
+  ]
+}

@@ -15,10 +15,10 @@
   },
   "pricing": {
     "model": "subscription",
-    "amountUsd": 179,
+    "amountUsd": 399,
     "interval": "month",
     "freeTrialDays": 7,
-    "checkoutUrl": "https://buy.stripe.com/eVqfZa9KmgSi0yl2wQbsc01"
+    "checkoutUrl": "https://buy.stripe.com/4gM6oAe0CfOea8Vc7qbsc09"
   },
   "demoUrl": "https://vapi.ai/?demo=true&shareKey=6b3a74e2-b47c-4c0f-93d4-a3d4b8e5d674&assistantId=cc8183ab-1e8f-4a81-afbf-40e7f7a31212"
 }

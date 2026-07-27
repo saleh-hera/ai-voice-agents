@@ -15,10 +15,10 @@
   },
   "pricing": {
     "model": "subscription",
-    "amountUsd": 299,
+    "amountUsd": 399,
     "interval": "month",
     "freeTrialDays": 7,
-    "checkoutUrl": ""
+    "checkoutUrl": "https://buy.stripe.com/4gM6oAe0CfOea8Vc7qbsc09"
   },
   "demoUrl": null
 }
