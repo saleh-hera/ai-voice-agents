@@ -6,7 +6,7 @@
   "voice": {
     "provider": "vapi",
     "voiceId": "female-warm",
-    "description": "Warm, natural female voice \u2014 knowledgeable and trustworthy (same voice as Bella)"
+    "description": "Warm, natural female voice — knowledgeable and trustworthy (same voice as Bella)"
   },
   "model": {
     "provider": "openai",
@@ -15,10 +15,10 @@
   },
   "pricing": {
     "model": "subscription",
-    "amountUsd": 399,
+    "amountUsd": 999,
     "interval": "month",
     "freeTrialDays": 7,
-    "checkoutUrl": "https://buy.stripe.com/4gM6oAe0CfOea8Vc7qbsc09"
+    "checkoutUrl": "https://buy.stripe.com/cNi5kwaOqeKabcZc7qbsc0a"
   },
   "demoUrl": null
 }

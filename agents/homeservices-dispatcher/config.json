@@ -6,7 +6,7 @@
   "voice": {
     "provider": "vapi",
     "voiceId": "female-calm",
-    "description": "Calm, capable female voice \u2014 reassuring during stressful repair situations"
+    "description": "Calm, capable female voice — reassuring during stressful repair situations"
   },
   "model": {
     "provider": "openai",
@@ -15,10 +15,10 @@
   },
   "pricing": {
     "model": "subscription",
-    "amountUsd": 399,
+    "amountUsd": 999,
     "interval": "month",
     "freeTrialDays": 7,
-    "checkoutUrl": "https://buy.stripe.com/4gM6oAe0CfOea8Vc7qbsc09"
+    "checkoutUrl": "https://buy.stripe.com/cNi5kwaOqeKabcZc7qbsc0a"
   },
   "demoUrl": null
 }

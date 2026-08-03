@@ -1,13 +1,13 @@
 {
   "name": "AI Agents Vault Assistant",
   "assistantId": "7b73d28b-695e-4942-a6ee-53cca48408d3",
-  "industry": "AI Agents Vault \u2014 own sales & support",
-  "firstMessage": "Hi, thanks for reaching out to AI Agents Vault! I'm the Vault Assistant \u2014 and yes, I'm one of the AI agents we sell, so you're hearing the product right now. What kind of business are you running?",
+  "industry": "AI Agents Vault — own sales & support",
+  "firstMessage": "Hi, thanks for reaching out to AI Agents Vault! I'm the Vault Assistant — and yes, I'm one of the AI agents we sell, so you're hearing the product right now. What kind of business are you running?",
   "voice": {
     "provider": "vapi",
     "voiceId": "Emma",
     "push": true,
-    "description": "Same warm female voice as Bella (Vapi 'Emma') \u2014 proven on PH launch"
+    "description": "Same warm female voice as Bella (Vapi 'Emma') — proven on PH launch"
   },
   "model": {
     "provider": "openai",
@@ -16,7 +16,9 @@
   },
   "pricing": {
     "model": "internal",
-    "note": "Not a sellable product \u2014 this is our own sales agent"
+    "note": "Not a sellable product — this is our own sales agent",
+    "amountUsd": 999,
+    "checkoutUrl": "https://buy.stripe.com/cNi5kwaOqeKabcZc7qbsc0a"
   },
   "demoUrl": ""
 }

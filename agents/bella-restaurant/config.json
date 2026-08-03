@@ -2,7 +2,7 @@
   "name": "Bella - Restaurant AI Receptionist",
   "assistantId": "24804ad8-2f6d-4b73-a5df-f76d37fe8dd0",
   "industry": "Restaurant / Hospitality",
-  "firstMessage": "Thank you for calling! This is Bella. How can I help you today \u00e2\u20ac\u201d a reservation, an order, or a question about the menu?",
+  "firstMessage": "Thank you for calling! This is Bella. How can I help you today â€” a reservation, an order, or a question about the menu?",
   "voice": {
     "provider": "vapi",
     "voiceId": "female-warm",
@@ -15,10 +15,10 @@
   },
   "pricing": {
     "model": "subscription",
-    "amountUsd": 399,
+    "amountUsd": 999,
     "interval": "month",
     "freeTrialDays": 7,
-    "checkoutUrl": "https://buy.stripe.com/4gM6oAe0CfOea8Vc7qbsc09"
+    "checkoutUrl": "https://buy.stripe.com/cNi5kwaOqeKabcZc7qbsc0a"
   },
   "demoUrl": "https://vapi.ai/?demo=true&shareKey=6b3a74e2-b47c-4c0f-93d4-a3d4b8e5d674&assistantId=24804ad8-2f6d-4b73-a5df-f76d37fe8dd0"
 }

@@ -1,6 +1,6 @@
 {
   "modules": {
-    "voiceAgent": "price_1TxiwU2FbI7xurHm7TStK7YL",
+    "voiceAgent": "price_1U060G2FbI7xurHm4ikQfwoQ",
     "missedCallRecovery": "price_1TxiwU2FbI7xurHm6L9GsiCf",
     "websiteChatCapture": "price_1TxiwV2FbI7xurHmYGu0QwNY",
     "appointmentBooking": "price_1TxiwW2FbI7xurHmPNTHYjK6",
@@ -52,9 +52,9 @@
     "costAnomalyAlertAgent": "price_1Txiwz2FbI7xurHm77LRpmdq"
   },
   "tiers": {
-    "Starter": "price_1Txix02FbI7xurHmryYYnyQy",
-    "Growth": "price_1Txix12FbI7xurHmJO48Z9BD",
-    "Total Solution": "price_1Txix12FbI7xurHmTl33ML5w"
+    "Starter": "price_1U060H2FbI7xurHmvjYzcKmh",
+    "Growth": "price_1U060H2FbI7xurHm6Ksh0tPj",
+    "Total Solution": "price_1U060I2FbI7xurHmHNKZ71Rw"
   },
-  "base_agent_payment_link": "https://buy.stripe.com/4gM6oAe0CfOea8Vc7qbsc09"
+  "base_agent_payment_link": "https://buy.stripe.com/cNi5kwaOqeKabcZc7qbsc0a"
 }
